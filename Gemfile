@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
-web: ruby server.rb -p $PORT
+ruby '2.4.0'
 gem 'sinatra'
