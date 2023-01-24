@@ -1,10 +1,13 @@
 {
-   "version": 2,
-   "name": "egomrepository",
-   "builds": [
-      { "public": "index.ejs", "use": "@vercel/node" }
-   ],
-   "routes": [
-      { "js": "/(.*)", "css": "/main.js" }
-   ]
+  "version": 2,
+  "builds": [{
+    "src": "public/js/main.js",
+    "use": "@now/node-server"
+  }],
+  "routes": [{"handle": "filesystem"},
+    {
+      "src": "/.*",
+      "dest": "main.js"
+    }
+  ]
 }
