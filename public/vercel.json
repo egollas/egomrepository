@@ -1,0 +1,10 @@
+{
+   "version": 2,
+   "name": "egomrepository",
+   "builds": [
+      { "js": "main.js", "use": "@vercel/node" }
+   ],
+   "routes": [
+      { "js": "/(.*)", "css": "/main.js" }
+   ]
+}
