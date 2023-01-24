@@ -7,7 +7,7 @@
   "routes": [{"handle": "filesystem"},
     {
       "src": "/.*",
-      "dest": "main.js"
+      "dest": "public/js/main.js"
     }
   ]
 }
