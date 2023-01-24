@@ -1,13 +1,13 @@
 {
   "version": 2,
   "builds": [{
-    "src": "public/js/main.js",
+    "src": "/public/js/main.js",
     "use": "@now/node-server"
   }],
   "routes": [{"handle": "filesystem"},
     {
       "src": "/.*",
-      "dest": "public/js/main.js"
+      "dest": "/public/js/main.js"
     }
   ]
 }
